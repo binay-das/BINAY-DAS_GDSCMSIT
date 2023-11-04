@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    height: 60px;
+    width: 94%;
+    position: fixed;
+    overflow: hidden;
+}
+.navbar img{
+    width: 100px;
+}
+.navbar .right{
+    position: absolute;
+    right: 0;
+}
+.navbar .right ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar .right ul li{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.navbar .right a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: black;
+}
+.navbar .right ul li button{
+    font-size: 20px;
+    height: 60px;
+    margin: 20px;
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: sans-serif;
+    background-color: white;
+    transition: all 5ms ease-in-out ;
+    position: relative;
+    float: right;
+}
+.navbar .right ul li button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+
+
+
+
+
+
+main .content, .hidden{
+    margin: 30px 40px;
+    padding: 30px 40px;
+    position: fixed;
+    top: 200px;
+}
+
+.content .name{
+    text-align: center;
+    font-size: 70px;
+    font-family: cursive;
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+.name img{
+    width: 50px;
+    position: relative;
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes arrow {
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 20px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.main_div{
+    height: 550px;
+    padding-top: 150px;
+    width: 100%;
+    
+}
+
+.second_div{
+    height: 800px;
+    background-color: rgb(250, 250, 98);
+    width: 100%;
+}
+
+.main_div #fixed-heading{
+    animation: animate;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    width: 450px;
+    
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animate{
+    0%{
+        top: 450px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+#section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main_div{
+    height: 200px;
+}
+.main_div{
+    height: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second_div{
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.name .fixed-heading{
+    width: 200px;
+}
+#fixed-heading{
+    width: 150px;
+}
+.main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.name{
+    width: 200px;
+}
+.second_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hidden{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 20px;
+    height: 60px;
+    margin: 20px;
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: sans-serif;
+    background-color: white;
+    transition: all 5ms ease-in-out ;
+    position: relative;
+    float: right;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+
+#hidden{
+    top: 150px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    top: 260px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position:fixed;
+}
+
+#hidden{
+    visibility: hidden;
+}
+
+
+
+
+footer{
+    margin: 30px 40px;
+    padding: 20px;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: 600;
+    width: 92%;
+    position: fixed;
+    overflow: hidden;
+    top: 600px;
+}
+footer .left ul{
+    display: flex;
+    list-style: none;
+}
+footer .left ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+footer .left ul li img{
+    width: 20px;
+}
+footer .right{
+    position: absolute;
+    right: 10px;
+}

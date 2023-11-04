@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left">
+                <img src="Clubhouse_App_Logo.svg.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">jobs</a></li>
+                    <li><button>get clubhouse</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_div" id="section">
+            <div class="content">
+                <div class="name" id="name">
+                    <img src="https://static-assets.clubhouseapi.com/static/img/clubhouse_logo_dark.2677abb66623.svg" alt="" id="fixed-heading">
+                    <img src="arrow.png" alt=""  id="fixed-text">
+                </div>
+            </div>
+            <div id="hidden">
+                <img src="image3.png" alt="" id="second">
+                <button>get clubhouse</button>
+            </div>
+        </div>
+        <div class="second_div" id="section1">
+            
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <ul>
+                <li><a href="">privacy</a></li>
+                <li><a href="">terms</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href=""><img src="twitter.png" alt=""></a></li>
+                <li><a href=""><img src="instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="right">
+            &copy; 2023 Alpha Exploration Co.
+        </div>
+    </footer>
+    
+    <script>
+        const fixedContentImages = document.getElementById('name');
+        const secondContentImages = document.getElementById('hidden');
+        const image1 = document.getElementById('fixed-heading');
+        const image2 = document.getElementById('fixed-text');
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            if (scrollPosition >= window.innerHeight / 1.98) {
+                fixedContentImages.style.display='none';
+                secondContentImages.style.visibility='visible';
+            } 
+        });
+    </script>
+    
+</body>
+</html>
